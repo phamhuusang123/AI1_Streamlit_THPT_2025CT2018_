@@ -1,6 +1,19 @@
 # 📊 Tra cứu & Phân tích điểm thi THPT 2025
 
-Ứng dụng **Streamlit** hỗ trợ tra cứu vị trí của thí sinh trong phân phối điểm toàn quốc, xem phổ điểm, bảng mốc, xếp hạng ước tính và **quy đổi điểm giữa các khối** dựa trên phương pháp percentile.
+Ứng dụng **Streamlit** hỗ trợ tra cứu vị trí của thí sinh trong phân phối điểm toàn quốc, xem phổ điểm, bảng mốc, xếp hạng ước tính và **quy đổi điểm giữa các khối** dựa trên phương pháp percentile. Link: https://thongkediemthithpt2025.streamlit.app/
+
+---
+
+
+## 📝 Lời nói đầu
+
+Kỳ thi THPT Quốc gia năm nay có nhiều điểm đổi mới về hình thức xét tuyển và cách tính điểm, khiến không ít **sĩ tử** và **quý phụ huynh** băn khoăn trong việc đánh giá kết quả cũng như xác định vị trí của mình trong mặt bằng chung.
+
+Với mong muốn hỗ trợ các bạn thí sinh tra cứu và phân tích điểm thi một cách nhanh chóng, chính xác, đồng thời giúp phụ huynh dễ dàng theo dõi, so sánh và định hướng cho con em mình, em đã xây dựng ứng dụng này trên nền tảng **Streamlit**.
+
+Hy vọng công cụ sẽ góp phần giảm bớt áp lực mùa thi, giúp mọi người có thêm thông tin tham khảo hữu ích trong quá trình xét tuyển, và lan toả tinh thần chuẩn bị chu đáo cho chặng đường sắp tới.
+
+**Kính chúc các sĩ tử đạt được kết quả như mong muốn và chúc quý phụ huynh luôn vững tâm đồng hành cùng con em mình.**
 
 ---
 
@@ -106,10 +119,11 @@ Sau khi chạy, mở trình duyệt tại **http://localhost:8501**.
 ---
 
 
-## 🤝 Đóng góp
+## 📮 Góp ý & Phản hồi
 
-Rất hoan nghênh các ý tưởng mới, báo lỗi hoặc pull request.  
-Bạn có thể:
-- Mở issue nếu gặp lỗi hoặc muốn yêu cầu tính năng.
-- Gửi PR cải thiện code, giao diện hoặc tài liệu.
+Em rất mong nhận được ý kiến đóng góp của Anh/Chị để dự án được hoàn thiện hơn.  
 
+- Vui lòng cho em biết những điểm cần cải thiện hoặc lỗi chưa hợp lý  
+- Đề xuất thêm tính năng hoặc nâng cấp giao diện  
+
+**Xin chân thành cảm ơn Anh/Chị đã dành thời gian xem và góp ý cho dự án.**
