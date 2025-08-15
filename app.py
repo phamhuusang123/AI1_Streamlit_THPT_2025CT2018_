@@ -126,7 +126,7 @@ sel_block = st.session_state.sel_block
 
 user_score = st.sidebar.number_input(
     "Nhập tổng điểm",
-    min_value=0.0, max_value=30.0, value=21.0, step=0.25
+    min_value=0.0, max_value=30.0, value=21.0, step=0.01
 )
 
 # --- FIX 2: Cờ submitted ---
