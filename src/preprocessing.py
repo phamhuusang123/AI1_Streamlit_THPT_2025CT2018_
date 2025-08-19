@@ -8,10 +8,11 @@ import pandas as pd
 ALL_SUBJECTS = [
     "Toán","Văn","Lí","Hóa","Sinh","Tin học","Sử","Địa",
     "Giáo dục kinh tế và pháp luật","Công nghệ","Công nghệ nông nghiệp",
-    "Công nghệ công nghiệp","Ngoại ngữ",
-    # 7 mã ngoại ngữ
-    "N1","N2","N3","N4","N5","N6","N7",
+    "Công nghệ công nghiệp",
+    "Tiếng Anh","Tiếng Nga","Tiếng Pháp","Tiếng Trung",
+    "Tiếng Đức","Tiếng Nhật","Tiếng Hàn",
 ]
+
 
 # Map mã ngoại ngữ -> tên (nếu cần hiển thị)
 FOREIGN_LANGUAGE_CODES = {
