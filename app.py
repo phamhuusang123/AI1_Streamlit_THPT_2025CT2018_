@@ -208,18 +208,29 @@ if show_results:
         }
         render_stat_cards(cards)
 
+        # Trích đoạn trong file app.py (phần hiển thị phổ điểm + bảng mốc)
+
+        # Xác định số môn trong block/môn đang chọn
+        if sel_block in BLOCKS:
+            num_subjects = len(BLOCKS[sel_block])
+        else:
+            num_subjects = 1  # trường hợp chỉ chọn 1 môn lẻ
+
+        max_score = num_subjects * 10  # mỗi môn tối đa 10 điểm
+
+        # Vẽ biểu đồ phổ điểm
         st.plotly_chart(
             histogram_with_score(
-                totals_arr, user_score, bin_min=0, bin_max=30, bin_step=1,
-                title=f"Phổ điểm - Khối {sel_block} (toàn quốc)"
+                totals_arr, user_score, bin_min=0, bin_max=max_score, bin_step=1,
+                title=f"Phổ điểm - {sel_block} (toàn quốc)"
             ),
             use_container_width=True
         )
 
-        thr_df = pd.DataFrame(counts_at_thresholds(totals_arr)).rename(
+        # Bảng số thí sinh >= mốc
+        thr_df = pd.DataFrame(counts_at_thresholds(totals_arr, max_score=max_score)).rename(
             columns={"moc": "Từ mốc", "count": "Số thí sinh >= mốc", "pct": "% tổng"}
         )
-        st.markdown("### Bảng số thí sinh theo mốc điểm (>= mốc)")
         st.dataframe(thr_df, use_container_width=True)
 
         # ---- Quy đổi điểm ----
