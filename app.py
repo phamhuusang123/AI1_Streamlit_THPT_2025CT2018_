@@ -234,7 +234,7 @@ if show_results:
         st.dataframe(thr_df, use_container_width=True)
 
         # ---- Quy đổi điểm ----
-        st.markdown("### Quy đổi điểm (theo percentiles)")
+        st.markdown("### Quy đổi điểm")
 
         # --- FIX 3: Giữ state cho target_block ---
         if "target_block" not in st.session_state:
